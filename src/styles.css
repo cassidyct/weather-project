@@ -1,0 +1,53 @@
+h1 {
+  text-align: right;
+  font-size: 40px;
+}
+
+#temperature {
+  font-size: 60px;
+  text-align: center;
+}
+.weather {
+  border: 1px solid #dadde1;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+}
+.cloud {
+  color: #d9d9d9;
+}
+.date {
+  text-align: right;
+}
+#humidity {
+  text-align: right;
+}
+.cloud {
+  color: #d9d9d9;
+  text-align: center;
+  font-size: 35px;
+}
+.rain {
+  color: #52c1da;
+  text-align: center;
+  font-size: 35px;
+}
+.units {
+  font-size: 15px;
+}
+
+#cloud {
+  text-align: left;
+}
+
+#wind {
+  text-align: right;
+}
+#precipitation {
+  text-align: right;
+}
+
+#description {
+  text-align: right;
+}
