@@ -35,6 +35,8 @@ h1 {
 }
 .units {
   font-size: 15px;
+  position: relative;
+  top: 20px;
 }
 
 #cloud {
