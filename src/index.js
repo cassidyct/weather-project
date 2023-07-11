@@ -65,21 +65,9 @@ function handleSubmit(event) {
   searchCity(city);
 }
 
-function searchLocation(position) {
-  let apiKey = `981803b3c6c0474c87784aa6cb2be104`;
-}
-
-function getCurrentLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(searchLocation);
-}
-
 let celciusTemperature = null;
 let searchForm = document.querySelector(`#search-form`);
 searchForm.addEventListener("submit", handleSubmit);
-
-let currentLocationButton = document.querySelector(`#current-location-button`);
-currentLocationButton.addEventListener("click", getCurrentLocation);
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
