@@ -61,3 +61,7 @@ h1 {
 .active:hover {
   text-decoration: none;
 }
+
+.weather-forecast {
+  text-align: center;
+}
