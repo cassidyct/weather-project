@@ -82,7 +82,7 @@ function displayWeatherCondition(response) {
   ).innerHTML = `Humidity: ${response.data.main.humidity}%`;
   document.querySelector(`#wind`).innerHTML = `Wind: ${Math.round(
     response.data.wind.speed
-  )} m/h`;
+  )} mp/h`;
   document.querySelector(`#description`).innerHTML =
     response.data.weather[0].main;
 
@@ -111,8 +111,5 @@ function handleSubmit(event) {
 
 let searchForm = document.querySelector(`#search-form`);
 searchForm.addEventListener("submit", handleSubmit);
-
-let fahrenheitLink = document.querySelector(`#fahrenheit-link`);
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 searchCity("New York");
