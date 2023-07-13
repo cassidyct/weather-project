@@ -52,10 +52,10 @@ function displayForecast(response) {
       }@2x.png" alt="" width="42"/>
       <div class = "weather-forecast-temperatures">
       <span class="weather-forecast-temperature-max"> ${Math.round(
-        (forecastDay.temp.max - 273.15) * 1.8 + 32
+        forecastDay.temp.max
       )}° </span>
         <span class="weather-forecast-temperature-min"> ${Math.round(
-          (forecastDay.temp.min - 273.15) * 1.8 + 32
+          forecastDay.temp.min
         )}° </span>
           </div>
           </div>`;
@@ -67,7 +67,7 @@ function displayForecast(response) {
 
 function getForecast(coordinates) {
   let apiKey = `2a2eaa51d996796495bf456e5b58adf4`;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&unit=imperial`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
   console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }
@@ -112,4 +112,4 @@ function handleSubmit(event) {
 let searchForm = document.querySelector(`#search-form`);
 searchForm.addEventListener("submit", handleSubmit);
 
-searchCity("New York");
+searchCity("Kingston");
