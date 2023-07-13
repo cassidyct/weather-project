@@ -1,8 +1,17 @@
-h1 {
-  text-align: right;
-  font-size: 40px;
+body {
 }
 
+#city {
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: left;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
 #temperature {
   font-size: 60px;
   text-align: center;
@@ -22,6 +31,8 @@ h1 {
 }
 #humidity {
   text-align: right;
+  margin: 0 auto;
+  display: block;
 }
 .cloud {
   color: #d9d9d9;
@@ -38,7 +49,11 @@ h1 {
   position: relative;
   top: 20px;
 }
-
+#date {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: left;
+}
 #cloud {
   text-align: left;
 }
@@ -80,4 +95,18 @@ h1 {
 }
 .github {
   text-align: center;
+}
+.city-input {
+}
+.container {
+  background-size: cover;
+}
+#weatherVideo {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -100;
+  position: absolute;
+  top: 0;
+  bottom: 0;
 }

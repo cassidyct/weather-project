@@ -16,44 +16,46 @@
       src="https://kit.fontawesome.com/97c1b8f759.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>ß
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="weather">
-      <div class="container">
-      <form class="search-form" id = "search-form">
-        <div class="row">
-          <div class= "col-6">
-          <input type="search" placeholder="Type a city..." autofocus="on" autocomplete="off" id="city-input" class = "form-control">
-          </div>
-          <div class= "col-3"><input class="btn btn-primary" type="submit" value="Search"></div>
-    <h1 id="city">Rome</h1>
-
-    <span class="date" id="date">Sun 7:00pm</span>
-    <span id="description"> Partly Cloudy </span>
-    <span id="humidity">Humidity:</span>
-    <span id= "wind">Wind:</span>
-    
-    <div class="d-flex weather-temperature">
-      <img src="" alt="Clear" id="icon"/>
-    <span class="temperature" id="temperature">70 </span>
-      <span class="units">°F</span>
-      </div>
-    <div class="weather-forecast" id="forecast">
-      <div class="row">
-        <div class="col-2">
-          <div class="weather-forecast-date">Mon</div>
-          <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="" width="42"/>
-        <div class = "weather-forecast-temperatures">
-          <span class="weather-forecast-temperature-max"> 18° </span>
-          <span class="weather-forecast-temperature-min"> 12° </span>
+    <video autoplay="" loop="" muted="" id="weatherVideo" src="src/weather.mp4"></video>
+    <source id="dayVideo" src="src/weather.mp4" type="video/mp4">
+  <div class="weather">
+    <div class="container">
+          <form class="search-form" id = "search-form">
+            <div class="row">
+              <div class= "col-8">
+                <input type="search" placeholder="Type a city..." autofocus="on" autocomplete="off" id="city-input" class = "form-control">
+              </div>
+              <div class= "col-4"><input class="btn btn-primary" type="submit" value="Search"></div>
+              <h1 id="city">Rome</h1>
+              
+              <span class="date" id="date">Sun 7:00pm</span>
+              <span id="description"> Partly Cloudy </span>
+              <div id="humidity">Humidity:</div>
+              <span id= "wind">Wind:</span>
+              
+              <div class="d-flex weather-temperature">
+                <img src="" alt="Clear" id="icon"/>
+                <span class="temperature" id="temperature">70 </span>
+                <span class="units">°F</span>
+              </div>
+              <div class="weather-forecast" id="forecast">
+                <div class="row">
+                  <div class="col-2">
+                    <div class="weather-forecast-date">Mon</div>
+                    <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="" width="42"/>
+                    <div class = "weather-forecast-temperatures">
+                      <span class="weather-forecast-temperature-max"> 18° </span>
+                      <span class="weather-forecast-temperature-min"> 12° </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
   <script src=src/index.js></script>
   </body>
   <div class="github"><a href="https://github.com/cassidyct/weather-project/tree/main/src">Open-Source code</a> by Cassidy Thomas</div>
